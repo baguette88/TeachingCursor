@@ -21,6 +21,7 @@ This discussion explores how AI tools can revolutionize coding practices and imp
 - **Automated Test Generation**: Creating comprehensive test suites
 - **Intelligent Code Review**: AI-assisted code analysis and suggestions
 - **Generating Documentation**: Automated creation of code documentation
+- Generate ToolTips for Unity tools
 
 ### 3. Claude: Advanced Language Model
 - **Concept Learning**: Interactive, scaffolded learning experiences
