@@ -36,8 +36,8 @@ This discussion explores how AI tools can revolutionize coding practices and imp
   2. Refine concepts into a promptwith Claude's assistance
   3. Generate final artwork using DALL-E or similar AI image generators by inputting the generated prompt.
 
-##5. new models:
-01 general
-01-mini - marh science code architecture
+##5. new models, software architecture discussions w ai:
+01 general purpose
+01-mini - STEM Model ;)
 
 (use mini to plan spec, 01 tp execute spec)
