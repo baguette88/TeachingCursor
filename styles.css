@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lora:wght@400;700&family=Fira+Code:wght@400;600&display=swap');
+
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #e74c3c;
+    --text-color: #2c3e50;
+    --bg-color: #f0ebe1;
+    --code-bg: #2c3e50;
+    --code-color: #ecf0f1;
+}
+
+body {
+    font-family: 'Lora', serif;
+    line-height: 1.8;
+    color: var(--text-color);
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 60px;
+    background-color: var(--bg-color);
+    background-image: 
+        url('https://www.transparenttextures.com/patterns/cream-paper.png'),
+        radial-gradient(circle at top left, #f0ebe1 0%, #e8e0d0 100%);
+    background-attachment: fixed;
+    transition: all 0.3s ease;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+    color: var(--text-color);
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1), 0 0 15px rgba(52, 73, 94, 0.1);
+    transition: all 0.3s ease;
+}
+
+h1 {
+    font-size: 3.5em;
+    border-bottom: 3px solid var(--secondary-color);
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+h1::after {
+    content: '';
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, var(--secondary-color), transparent);
+    filter: blur(2px);
+}
+
+h2 {
+    font-size: 2.5em;
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 10px;
+    margin-top: 40px;
+    position: relative;
+}
+
+h2::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, var(--primary-color), transparent);
+    filter: blur(1px);
+}
+
+pre {
+    background-color: var(--code-bg);
+    border: 1px solid #34495e;
+    border-radius: 12px;
+    padding: 20px;
+    overflow-x: auto;
+    box-shadow: inset 0 0 15px rgba(0,0,0,0.2), 0 5px 10px rgba(0,0,0,0.1);
+    position: relative;
+}
+
+pre::before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    width: 12px;
+    height: 12px;
+    background-color: var(--secondary-color);
+    border-radius: 50%;
+    box-shadow: 20px 0 0 #f1c40f, 40px 0 0 #2ecc71;
+}
+
+code {
+    font-family: 'Fira Code', monospace;
+    color: var(--code-color);
+    font-size: 1.1em;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+}
+
+#content {
+    background-color: rgba(255,255,255,0.95);
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.05);
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+#content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: linear-gradient(90deg, var(--secondary-color), #f39c12, #2ecc71, var(--primary-color), #9b59b6);
+}
+
+blockquote {
+    border-left: 5px solid var(--secondary-color);
+    padding: 20px;
+    margin-left: 0;
+    font-style: italic;
+    color: #7f8c8d;
+    background-color: #f8f9fa;
+    border-radius: 0 10px 10px 0;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.1);
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+blockquote::before {
+    content: '"';
+    font-size: 4em;
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    color: rgba(231, 76, 60, 0.2);
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border-bottom: 1px dotted var(--primary-color);
+    position: relative;
+}
+
+a::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: var(--secondary-color);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+a:hover {
+    color: var(--secondary-color);
+}
+
+a:hover::after {
+    transform: scaleX(1);
+}
+
+ul, ol {
+    padding-left: 30px;
+    list-style-position: outside;
+}
+
+li {
+    margin-bottom: 15px;
+    position: relative;
+    padding-left: 10px;
+}
+
+ul li::marker {
+    color: var(--primary-color);
+    font-size: 1.2em;
+}
+
+ol {
+    counter-reset: item;
+}
+
+ol li {
+    counter-increment: item;
+}
+
+ol li::marker {
+    content: counter(item) ".";
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+::selection {
+    background-color: rgba(52, 152, 219, 0.3);
+    color: var(--text-color);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --text-color: #ecf0f1;
+        --bg-color: #2c3e50;
+        --code-bg: #34495e;
+        --code-color: #ecf0f1;
+    }
+
+    body {
+        background-image: 
+            url('https://www.transparenttextures.com/patterns/cream-paper.png'),
+            radial-gradient(circle at top left, #2c3e50 0%, #34495e 100%);
+    }
+
+    #content {
+        background-color: rgba(52, 73, 94, 0.95);
+    }
+
+    blockquote {
+        background-color: #34495e;
+        color: #bdc3c7;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 20px;
+    }
+    #content {
+        padding: 30px;
+    }
+    h1 {
+        font-size: 2.5em;
+    }
+    h2 {
+        font-size: 2em;
+    }
+    ul, ol {
+        padding-left: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+    #content {
+        padding: 20px;
+    }
+    h1 {
+        font-size: 2em;
+    }
+    h2 {
+        font-size: 1.5em;
+    }
+    pre {
+        padding: 15px;
+    }
+}
