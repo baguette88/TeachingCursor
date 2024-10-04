@@ -5,6 +5,11 @@ This discussion explores how AI tools can revolutionize coding practices and imp
 
 ## Key AI Tools and Their Applications
 
+0. Perplexity AI search as edu tool
+-Up to date info
+-Aggregate esucational resources/news for a challenge
+-suggests follow up questions
+
 ### 1. Cursor: AI-Powered Code Editor
 - **Setup**: Instructions for setting up and configuring Cursor
 - **Features**:
