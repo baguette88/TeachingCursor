@@ -28,6 +28,6 @@ This discussion explores how AI tools can revolutionize coding practices and imp
 ### 4. AI in Creative Coding
 - **Concept Art Workflow**:
   1. Sketch initial ideas
-  2. Refine concepts with Claude's assistance
-  3. Generate final artwork using DALL-E or similar AI image generators
+  2. Refine concepts into a promptwith Claude's assistance
+  3. Generate final artwork using DALL-E or similar AI image generators by inputting the generated prompt.
 
