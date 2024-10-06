@@ -1,7 +1,7 @@
-# AI Tools for Devs: Enhancing Your Development Workflow
+# AI Tools for Dev and Artist workflows: Enhancing Your Development Workflow
 
 ## Introduction
-This discussion explores how AI tools can revolutionize coding practices and improve productivity.
+This discussion explores how AI tools can revolutionize coding and text editing practices and improve productivity.
 
 ## Key AI Tools and Their Applications
 
