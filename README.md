@@ -14,6 +14,7 @@ This discussion explores how AI tools can revolutionize coding and text editing 
 - **Setup**: Instructions for setting up and configuring Cursor
 - **Features**:
   - AI-assisted code completion
+- ask a question and @ documentation to get up to date info on schema, call structures, etc
   - Natural language query (Command + K)
   - On-demand SQL and Bash command generation
 
