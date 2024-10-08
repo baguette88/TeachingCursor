@@ -1,8 +1,5 @@
 # AI Tools for Dev and Artist workflows: Enhancing Your Development Workflow
 
-## Introduction
-This discussion explores how AI tools can revolutionize coding and text editing practices and improve productivity.
-
 ## Key AI Tools and Their Applications
 
 0. Perplexity AI search as edu tool
